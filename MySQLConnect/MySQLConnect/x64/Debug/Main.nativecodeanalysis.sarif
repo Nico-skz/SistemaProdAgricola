@@ -1,0 +1,131 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.33.31629.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///c:/users/asus/source/repos/mysqlconnect/mysqlconnect/main.c"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "d638e1e23d0626a6172420bb682d5c975c17591b470f180dcd906a2d594d4999"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/program files/mysql/mysql server 8.0/include/mysql.h"
+          },
+          "hashes": {
+            "sha-256": "bce9c32266599874be8da59d49598d7e94e20e5f120189930cea93ddf5c9b429"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/program files/mysql/mysql server 8.0/include/field_types.h"
+          },
+          "hashes": {
+            "sha-256": "fd515a907d725d3d31057380157a6a046b9ce8d9edcd039d31c3384b1fd9dd5d"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/program files/mysql/mysql server 8.0/include/my_list.h"
+          },
+          "hashes": {
+            "sha-256": "fd9fffea9f4e846b56edf7e8dc47ba0949de6af5ce28a0cb10d1dee0182dba90"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/program files/mysql/mysql server 8.0/include/mysql_com.h"
+          },
+          "hashes": {
+            "sha-256": "e4da85a623838237a30a46a352d0c2ad82ea605aa78e722d21bf79388885aef9"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/program files/mysql/mysql server 8.0/include/my_command.h"
+          },
+          "hashes": {
+            "sha-256": "7947f366d98d01a7c9e8f738f40823586dac5db9c4f080aa267cdbd250a636e7"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/program files/mysql/mysql server 8.0/include/my_compress.h"
+          },
+          "hashes": {
+            "sha-256": "e3631c218051e8ab945ae3e8aa5c3b1795a8c1f15632abc18eb0837230139aa9"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/program files/mysql/mysql server 8.0/include/mysql/udf_registration_types.h"
+          },
+          "hashes": {
+            "sha-256": "c6fb53374f7746214a412124b2454afc9d1f001c5dbe7b33debc0c2681bc158c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/program files/mysql/mysql server 8.0/include/mysql/client_plugin.h"
+          },
+          "hashes": {
+            "sha-256": "60188460b58ef753d50c8d694d54eb389e7f9f3b0c3354badc03de211f61144f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/program files/mysql/mysql server 8.0/include/mysql/plugin_auth_common.h"
+          },
+          "hashes": {
+            "sha-256": "2b51191a7ba91e508d6fbe2f051e5bc9d83db7415e5af005ba6dbbba5f73c9b1"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/program files/mysql/mysql server 8.0/include/mysql_version.h"
+          },
+          "hashes": {
+            "sha-256": "4d5300c6aa1ea86e673b37a41a6be11e1219c818469cb8d5d3f7094dc9f2a7ea"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/program files/mysql/mysql server 8.0/include/mysql_time.h"
+          },
+          "hashes": {
+            "sha-256": "106af81ccd4a619385ca1df244a7ab695d05cc520863d03663dd290434650b36"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/program files/mysql/mysql server 8.0/include/errmsg.h"
+          },
+          "hashes": {
+            "sha-256": "e8b45a71ed194b840d822e7d7aa09b79225962babcd8c15e10216f4b27b617b0"
+          }
+        }
+      ]
+    }
+  ]
+}

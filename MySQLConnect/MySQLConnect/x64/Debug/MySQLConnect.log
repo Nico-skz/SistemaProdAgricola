@@ -1,0 +1,5 @@
+﻿  proyecto1.c
+C:\Users\Asus\OneDrive - Estudiantes ITCR\Escritorio\Personal Docs\Universidad\IISEM 2022\Lenguajes\Proyecto_1\proyecto1.c(141,14): warning C4101: 'valor': unreferenced local variable
+C:\Users\Asus\OneDrive - Estudiantes ITCR\Escritorio\Personal Docs\Universidad\IISEM 2022\Lenguajes\Proyecto_1\proyecto1.c(73): warning C4715: 'retrieveAreas': not all control paths return a value
+C:\Users\Asus\OneDrive - Estudiantes ITCR\Escritorio\Personal Docs\Universidad\IISEM 2022\Lenguajes\Proyecto_1\proyecto1.c(120): warning C4715: 'retrieveEmployees': not all control paths return a value
+  MySQLConnect.vcxproj -> C:\Users\Asus\source\repos\MySQLConnect\x64\Debug\MySQLConnect.exe
