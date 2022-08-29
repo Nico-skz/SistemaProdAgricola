@@ -1,2 +1,4 @@
-2A,papa,500.0,0.5
-3B,culantro,240,3
+'2A','papa',500.0,0.5
+'3B','culantro',240,3
+'2B','yuca',400,1.5
+'8A','manzana',300,3
