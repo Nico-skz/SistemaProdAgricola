@@ -16,30 +16,28 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `local`
+-- Table structure for table `nomina`
 --
 
-DROP TABLE IF EXISTS `local`;
+DROP TABLE IF EXISTS `nomina`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `local` (
-  `cedulajuridica` int NOT NULL,
-  `nombre` varchar(45) CHARACTER SET utf8mb3 COLLATE utf8mb3_spanish_ci NOT NULL,
-  `telefono` int NOT NULL,
-  PRIMARY KEY (`cedulajuridica`),
-  UNIQUE KEY `nombre_UNIQUE` (`nombre`),
-  UNIQUE KEY `cedulajuridica_UNIQUE` (`cedulajuridica`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_spanish_ci;
+CREATE TABLE `nomina` (
+  `mes` int NOT NULL,
+  `empleado` int NOT NULL,
+  PRIMARY KEY (`mes`),
+  KEY `empleadoxnomina_fk_idx` (`empleado`),
+  CONSTRAINT `empleadoxnomina_fk` FOREIGN KEY (`empleado`) REFERENCES `empleado` (`cedula`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `local`
+-- Dumping data for table `nomina`
 --
 
-LOCK TABLES `local` WRITE;
-/*!40000 ALTER TABLE `local` DISABLE KEYS */;
-INSERT INTO `local` VALUES (41895523,'Remolacha Feliz',22837564);
-/*!40000 ALTER TABLE `local` ENABLE KEYS */;
+LOCK TABLES `nomina` WRITE;
+/*!40000 ALTER TABLE `nomina` DISABLE KEYS */;
+/*!40000 ALTER TABLE `nomina` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 

@@ -1,5 +1,3 @@
-CREATE DATABASE  IF NOT EXISTS `sistemaagricola` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
-USE `sistemaagricola`;
 -- MySQL dump 10.13  Distrib 8.0.30, for Win64 (x86_64)
 --
 -- Host: localhost    Database: sistemaagricola
@@ -25,13 +23,12 @@ DROP TABLE IF EXISTS `producto`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `producto` (
-  `idproducto` varchar(2) NOT NULL,
-  `nombre` varchar(45) NOT NULL,
+  `idproducto` varchar(3) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `nombre` varchar(45) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   `costo` decimal(8,2) NOT NULL,
   `impuesto` decimal(4,2) NOT NULL,
-  PRIMARY KEY (`idproducto`),
-  UNIQUE KEY `idproducto_UNIQUE` (`idproducto`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  PRIMARY KEY (`idproducto`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -40,6 +37,7 @@ CREATE TABLE `producto` (
 
 LOCK TABLES `producto` WRITE;
 /*!40000 ALTER TABLE `producto` DISABLE KEYS */;
+INSERT INTO `producto` VALUES ('2A','papa',500.00,0.50),('2B','yuca',400.00,1.50),('2C','banano',270.00,1.20),('2E','papaya',800.76,1.00),('2T','pera',150.00,1.20),('3B','culantro',240.00,3.00),('3C','fresa',145.90,1.90),('3F','uva',100.00,0.30),('4B','guayaba',428.00,2.00),('4H','naranja',200.00,0.70),('8A','manzana',300.00,3.00);
 /*!40000 ALTER TABLE `producto` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -52,4 +50,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-08-23 15:48:34
+-- Dump completed on 2022-08-29 21:46:40
